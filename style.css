@@ -62,3 +62,9 @@ body {
     width:105px; 
     cursor: pointer;
 }
+.hideContainer {
+    display: none;
+}
+.unhideContainer {
+    display: block;
+}
