@@ -30,7 +30,7 @@ function doOpenConvivaAIChatWindow() {
     const chatBubble = document.querySelector('[data-id="convivaAIChatBubble"]');
     chatBubble.classList.add("hideContainer");
     chatBubble.classList.remove("unhideContainer");
-    const chatWindow = document.querySelector('[data-id="convivaAIChatBubble"]');
+    const chatWindow = document.querySelector('[data-id="convivaAIChatWindow"]');
     chatWindow.classList.add("unhideContainer");
     chatWindow.classList.remove("hideContainer");
 }
@@ -38,7 +38,7 @@ function doMinimizeConvivaAIChatWindow() {
     const chatBubble = document.querySelector('[data-id="convivaAIChatBubble"]');
     chatBubble.classList.add("unhideContainer");
     chatBubble.classList.remove("hideContainer");
-    const chatWindow = document.querySelector('[data-id="convivaAIChatBubble"]');
+    const chatWindow = document.querySelector('[data-id="convivaAIChatWindow"]');
     chatWindow.classList.add("hideContainer");
     chatWindow.classList.remove("unhideContainer");
 }
