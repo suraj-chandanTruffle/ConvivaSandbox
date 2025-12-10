@@ -2,7 +2,10 @@ let message = '';
 document.getElementById("convivaChatInput").addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
         message = e.target.value;
-        doCallAgentforce();
+        if(message){
+            doCallAgentforce();
+            e.target.value = '';
+        }
     }
 });
 function initEmbeddedMessaging() {
@@ -38,12 +41,6 @@ function initEmbeddedMessaging() {
             const chatBubble = document.querySelector('[data-id="convivaAIChatBubble"]');
             chatBubble.classList.add("hideContainer");
             chatBubble.classList.remove("unhideContainer");
-        });
-        window.addEventListener('onEmbeddedMessagingConversationRouted', function (event) {
-            console.log("✅ onEmbeddedMessagingConversationRouted");
-        });
-         window.addEventListener('onEmbeddedMessagingSessionStatusUpdate', function (event) {
-            console.log("✅ onEmbeddedMessagingSessionStatusUpdate");
         });
     } catch (err) {
         console.error('Error loading Embedded Messaging: ', err);
