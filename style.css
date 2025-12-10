@@ -1,8 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-}
-h1 {
-    color: blue;
+    color: #FFFFFF;
 }
 .convivaAIChatWindow {
     width: 320px;
@@ -16,20 +14,18 @@ h1 {
 .convivaAIChatHeader {
     padding: 15px 20px;
     background-color: #6da927;
-    color: #FFFFFF;
     border-radius: 9px 9px 0px 0px;
 }
 .convivaAIChatHeaderMinimizeButton {
     border: 0px; 
     background-color: #6da927;
-    color: #FFFFFF;
     float: right;
     padding-top: 5px;
 }
 .convivaWelcomeBanner {
     background-image: url('./assets/convivaBackground.png');
     background-repeat: no-repeat;
-    height: 125px;
+    height: 140px;
     padding: 20px;
     background-size: cover;
 }
