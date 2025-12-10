@@ -1,3 +1,10 @@
+let message = '';
+document.getElementById("agentInput").addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+        message = e.target.value;
+        doCallAgentforce();
+    }
+});
 function initEmbeddedMessaging() {
     try {
         embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
@@ -21,6 +28,8 @@ function initEmbeddedMessaging() {
         });
         window.addEventListener('onEmbeddedMessagingFirstBotMessageSent', function (event) {
             console.log("✅ onEmbeddedMessagingFirstBotMessageSent");
+            console.log(message);
+            embeddedservice_bootstrap.utilAPI.sendTextMessage(message);
         });
     } catch (err) {
         console.error('Error loading Embedded Messaging: ', err);
@@ -42,6 +51,22 @@ function doMinimizeConvivaAIChatWindow() {
     chatWindow.classList.add("hideContainer");
     chatWindow.classList.remove("unhideContainer");
 }
-function greet() {
-    alert("Hello from JavaScript!");
+function onTalkToSales(){
+    message = 'Talk to sales';
+    doCallAgentforce();
+}
+function onShowMeAConvivaDemo(){
+    message = 'Show me a Conviva demo';
+    doCallAgentforce();
+}
+function onHowCanConvivaHelpMyBusiness(){
+    message = 'How can Conviva help my business';
+    doCallAgentforce();
+}
+function onINeedTechnicalSupport(){
+    message = 'I need technical support';
+    doCallAgentforce();
+}
+function doCallAgentforce() {
+    embeddedservice_bootstrap.utilAPI.launchChat();
 }
