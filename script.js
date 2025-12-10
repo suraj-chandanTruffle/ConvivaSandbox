@@ -1,4 +1,5 @@
 let message = '';
+let isChatOpened = false;
 document.getElementById("convivaChatInput").addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
         message = e.target.value;
@@ -21,9 +22,13 @@ function initEmbeddedMessaging() {
         );
         window.addEventListener("onEmbeddedMessagingReady", () => {
             console.log("✅ onEmbeddedMessagingReady");
-            const chatBubble = document.querySelector('[data-id="convivaAIChatBubble"]');
-            chatBubble.classList.add("unhideContainer");
-            chatBubble.classList.remove("hideContainer");
+            setTimeout(() => {
+                if(!isChatOpened){
+                    const chatBubble = document.querySelector('[data-id="convivaAIChatBubble"]');
+                    chatBubble.classList.add("unhideContainer");
+                    chatBubble.classList.remove("hideContainer");
+                }
+            }, 1000);
         });
         window.addEventListener('onEmbeddedMessagingConversationStarted', function (event) {
             console.log("✅ onEmbeddedMessagingConversationStarted");
@@ -38,6 +43,7 @@ function initEmbeddedMessaging() {
         });
         window.addEventListener('onEmbeddedMessagingConversationOpened', function (event) {
             console.log("✅ onEmbeddedMessagingConversationOpened");
+            isChatOpened = true;
             const chatBubble = document.querySelector('[data-id="convivaAIChatBubble"]');
             chatBubble.classList.add("hideContainer");
             chatBubble.classList.remove("unhideContainer");
