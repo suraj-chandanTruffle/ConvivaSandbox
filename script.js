@@ -10,11 +10,6 @@ function initEmbeddedMessaging() {
             }
         );
         window.addEventListener("onEmbeddedMessagingReady", () => {
-            const embeddedChatBubble = document.getElementById("embeddedMessagingFrame");
-            if (embeddedChatBubble) {
-                console.log('sahdishihsoihfd');
-                embeddedChatBubble.style.visibility = "hidden";
-            }
             console.log("✅ onEmbeddedMessagingReady");
             const chatBubble = document.querySelector('[data-id="convivaAIChatBubble"]');
             console.log(chatBubble.getAttribute("data-id"));
