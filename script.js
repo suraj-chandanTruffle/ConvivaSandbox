@@ -48,6 +48,9 @@ function initEmbeddedMessaging() {
             chatBubble.classList.add("hideContainer");
             chatBubble.classList.remove("unhideContainer");
         });
+        window.addEventListener('onEmbeddedMessagingWindowClosed', function (event) {
+            isChatOpened = false;
+        });
     } catch (err) {
         console.error('Error loading Embedded Messaging: ', err);
     }
