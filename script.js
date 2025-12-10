@@ -25,6 +25,9 @@ function initEmbeddedMessaging() {
         });
         window.addEventListener('onEmbeddedMessagingConversationStarted', function (event) {
             console.log("✅ onEmbeddedMessagingConversationStarted");
+            const chatWindow = document.querySelector('[data-id="convivaAIChatWindow"]');
+            chatWindow.classList.add("hideContainer");
+            chatWindow.classList.remove("unhideContainer");
         });
         window.addEventListener('onEmbeddedMessagingFirstBotMessageSent', function (event) {
             console.log("✅ onEmbeddedMessagingFirstBotMessageSent");
@@ -68,8 +71,5 @@ function onINeedTechnicalSupport(){
     doCallAgentforce();
 }
 function doCallAgentforce() {
-    const chatWindow = document.querySelector('[data-id="convivaAIChatWindow"]');
-    chatWindow.classList.add("hideContainer");
-    chatWindow.classList.remove("unhideContainer");
     embeddedservice_bootstrap.utilAPI.launchChat();
 }
