@@ -19,7 +19,6 @@ function initEmbeddedMessaging() {
         window.addEventListener("onEmbeddedMessagingReady", () => {
             console.log("✅ onEmbeddedMessagingReady");
             const chatBubble = document.querySelector('[data-id="convivaAIChatBubble"]');
-            console.log(chatBubble.getAttribute("data-id"));
             chatBubble.classList.add("unhideContainer");
             chatBubble.classList.remove("hideContainer");
         });
@@ -36,6 +35,9 @@ function initEmbeddedMessaging() {
         });
         window.addEventListener('onEmbeddedMessagingConversationOpened', function (event) {
             console.log("✅ onEmbeddedMessagingConversationOpened");
+            const chatBubble = document.querySelector('[data-id="convivaAIChatBubble"]');
+            chatBubble.classList.add("hideContainer");
+            chatBubble.classList.remove("unhideContainer");
         });
         window.addEventListener('onEmbeddedMessagingConversationRouted', function (event) {
             console.log("✅ onEmbeddedMessagingConversationRouted");
