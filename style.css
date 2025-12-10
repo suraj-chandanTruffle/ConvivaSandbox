@@ -73,6 +73,3 @@ body {
 .embeddedMessagingConversationButtonWrapper .embeddedMessagingConversationButton {
     visibility: hidden;
 }
-.embedded-messaging > .embeddedMessagingFrame {
-    visibility: hidden;
-}
