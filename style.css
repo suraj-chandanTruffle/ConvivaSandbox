@@ -48,5 +48,8 @@ body {
     position: absolute;
     bottom: 0px;
     width: 100%;
+}
+.convivaSearch {
+    width: 272px;
     height: 25px;
 }
