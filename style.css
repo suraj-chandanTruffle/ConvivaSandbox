@@ -37,6 +37,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 5px;
     margin: 2px; 0px;
+    cursor: pointer;
 }
 .convivaButtonInputContainer{
     padding: 20px;
@@ -52,4 +53,12 @@ body {
 .convivaSearch {
     width: 272px;
     height: 25px;
+}
+.convivaAIChatBubble{
+    color: white; 
+    background-color: #9cdc00; 
+    border-radius: 5px; 
+    padding:10px; 
+    width:105px; 
+    cursor: pointer;
 }
