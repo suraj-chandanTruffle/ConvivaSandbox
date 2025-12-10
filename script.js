@@ -28,7 +28,7 @@ function initEmbeddedMessaging() {
                     chatBubble.classList.add("unhideContainer");
                     chatBubble.classList.remove("hideContainer");
                 }
-            }, 1000);
+            }, 1500);
         });
         window.addEventListener('onEmbeddedMessagingConversationStarted', function (event) {
             console.log("✅ onEmbeddedMessagingConversationStarted");
