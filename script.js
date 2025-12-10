@@ -68,5 +68,8 @@ function onINeedTechnicalSupport(){
     doCallAgentforce();
 }
 function doCallAgentforce() {
+    const chatWindow = document.querySelector('[data-id="convivaAIChatWindow"]');
+    chatWindow.classList.add("hideContainer");
+    chatWindow.classList.remove("unhideContainer");
     embeddedservice_bootstrap.utilAPI.launchChat();
 }
