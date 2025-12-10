@@ -1,5 +1,5 @@
 let message = '';
-document.getElementById("agentInput").addEventListener("keydown", function (e) {
+document.getElementById("convivaChatInput").addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
         message = e.target.value;
         doCallAgentforce();
