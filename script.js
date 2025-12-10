@@ -34,6 +34,15 @@ function initEmbeddedMessaging() {
             console.log(message);
             embeddedservice_bootstrap.utilAPI.sendTextMessage(message);
         });
+        window.addEventListener('onEmbeddedMessagingConversationOpened', function (event) {
+            console.log("✅ onEmbeddedMessagingConversationOpened");
+        });
+        window.addEventListener('onEmbeddedMessagingConversationRouted', function (event) {
+            console.log("✅ onEmbeddedMessagingConversationRouted");
+        });
+         window.addEventListener('onEmbeddedMessagingSessionStatusUpdate', function (event) {
+            console.log("✅ onEmbeddedMessagingSessionStatusUpdate");
+        });
     } catch (err) {
         console.error('Error loading Embedded Messaging: ', err);
     }
