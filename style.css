@@ -40,8 +40,6 @@ body {
 }
 .convivaButtonInputContainer{
     padding: 20px;
-    width: 100%;
-    height: 25px;
 }
 .convivaButtonContainer {
     text-align: right;
@@ -49,4 +47,6 @@ body {
 .convivaSearchInput {
     position: absolute;
     bottom: 0px;
+    width: 100%;
+    height: 25px;
 }
