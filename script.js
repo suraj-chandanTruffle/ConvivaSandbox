@@ -9,10 +9,17 @@ function initEmbeddedMessaging() {
                 scrt2URL: 'https://convivareimagined--partialsb.sandbox.my.salesforce-scrt.com'
             }
         );
+        const embeddedChatBubble = document.getElementById("embeddedMessagingFrame");
+        if (embeddedChatBubble) {
+            console.log('sahdishihsoihfd');
+            embeddedChatBubble.style.visibility = "hidden";
+        }
         window.addEventListener("onEmbeddedMessagingReady", () => {
             console.log("✅ onEmbeddedMessagingReady");
-            const chatWindow = document.querySelector('[data-id="convivaAIChatWindow"]');
-            console.log(chatWindow.getAttribute("data-id"));
+            const chatBubble = document.querySelector('[data-id="convivaAIChatBubble"]');
+            console.log(chatBubble.getAttribute("data-id"));
+            chatBubble.classList.add("unhideContainer");
+            chatBubble.classList.remove("hideContainer");
         });
         window.addEventListener('onEmbeddedMessagingConversationStarted', function (event) {
             console.log("✅ onEmbeddedMessagingConversationStarted");
@@ -24,7 +31,22 @@ function initEmbeddedMessaging() {
         console.error('Error loading Embedded Messaging: ', err);
     }
 };
-
+function doOpenConvivaAIChatWindow() {
+    const chatBubble = document.querySelector('[data-id="convivaAIChatBubble"]');
+    chatBubble.classList.add("hideContainer");
+    chatBubble.classList.remove("unhideContainer");
+    const chatWindow = document.querySelector('[data-id="convivaAIChatBubble"]');
+    chatWindow.classList.add("unhideContainer");
+    chatWindow.classList.remove("hideContainer");
+}
+function doMinimizeConvivaAIChatWindow() {
+    const chatBubble = document.querySelector('[data-id="convivaAIChatBubble"]');
+    chatBubble.classList.add("unhideContainer");
+    chatBubble.classList.remove("hideContainer");
+    const chatWindow = document.querySelector('[data-id="convivaAIChatBubble"]');
+    chatWindow.classList.add("hideContainer");
+    chatWindow.classList.remove("unhideContainer");
+}
 function greet() {
     alert("Hello from JavaScript!");
 }
