@@ -21,6 +21,7 @@ body {
     background-color: #6da927;
     float: right;
     padding-top: 5px;
+    color: #FFFFFF;
 }
 .convivaWelcomeBanner {
     background-image: url('./assets/convivaBackground.png');
@@ -30,7 +31,7 @@ body {
     background-size: cover;
 }
 .convivaButton {
-    background-color: white; 
+    background-color: #FFFFFF; 
     border-radius: 3px; 
     border: 1px solid #9cdc00;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
