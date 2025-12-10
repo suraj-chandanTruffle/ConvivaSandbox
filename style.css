@@ -27,3 +27,8 @@ h1 {
     float: right;
     padding-top: 5px;
 }
+.convivaWelcomeBanner {
+    background-image: url('./assets/convivaBackground.png');
+    background-repeat: no-repeat;
+    height: 125px;
+}
