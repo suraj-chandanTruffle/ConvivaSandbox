@@ -38,10 +38,13 @@ body {
     padding: 5px;
     margin: 2px; 0px;
 }
+.convivaButtonInputContainer{
+    padding: 20px;
+}
 .convivaButtonContainer {
     text-align: right;
 }
-.convivaSearchInput{
+.convivaSearchInput {
     position: absolue;
     bottom: 0px;
 }
