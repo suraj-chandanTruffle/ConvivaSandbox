@@ -4,7 +4,7 @@ body {
 }
 .convivaAIChatWindow {
     width: 320px;
-    height: 402px;
+    height: 480px;
     position: absolute;
     bottom: 0px;
     right: 29px;
@@ -28,4 +28,11 @@ body {
     height: 140px;
     padding: 20px;
     background-size: cover;
+}
+.convivaButton {
+    background-color: white; 
+    border-radius: 3px; 
+    border: 1px solid #9cdc00;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
 }
