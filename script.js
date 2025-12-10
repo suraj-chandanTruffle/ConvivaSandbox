@@ -9,6 +9,17 @@ function initEmbeddedMessaging() {
                 scrt2URL: 'https://convivareimagined--partialsb.sandbox.my.salesforce-scrt.com'
             }
         );
+        window.addEventListener("onEmbeddedMessagingReady", () => {
+            console.log("✅ onEmbeddedMessagingReady");
+            const chatWindow = document.querySelector('[data-id="convivaAIChatWindow"]');
+            console.log(chatWindow.getAttribute("data-id"));
+        });
+        window.addEventListener('onEmbeddedMessagingConversationStarted', function (event) {
+            console.log("✅ onEmbeddedMessagingConversationStarted");
+        });
+        window.addEventListener('onEmbeddedMessagingFirstBotMessageSent', function (event) {
+            console.log("✅ onEmbeddedMessagingFirstBotMessageSent");
+        });
     } catch (err) {
         console.error('Error loading Embedded Messaging: ', err);
     }
