@@ -10,26 +10,33 @@
   </head>
   <body>
     <div class="convivaAIChatWindow">
-      <div class="convivaAIChatHeader">
-        <div>
-          <span>Conviva.AI(beta)</span>
-          <button class="convivaAIChatHeaderMinimizeButton"><i class="fa fa-window-minimize"></i></button>
+      <div data-id="convivaAIChatWindow">
+        <div class="convivaAIChatHeader">
+          <div>
+            <span>Conviva.AI(beta)</span>
+            <button class="convivaAIChatHeaderMinimizeButton"><i class="fa fa-window-minimize"></i></button>
+          </div>
+        </div>
+        <div class="convivaWelcomeBanner">
+          <p>Hello! I am Conviva.AI(beta), an AI assistant designed to help you find the best solutions for your business needs.</p>
+          <br/>
+          <p>How can I help you today?</p>
+        </div>
+        <div class="convivaButtonInputContainer">
+          <div class="convivaButtonContainer">
+            <button type="button" class="convivaButton" onclick="alert('Hello world!')">Talk to sales</button>
+            <button type="button" class="convivaButton" onclick="alert('Hello world!')">Show me a Conviva demo</button>
+            <button type="button" class="convivaButton" onclick="alert('Hello world!')">How can Conviva help my business</button>
+            <button type="button" class="convivaButton" onclick="alert('Hello world!')">I need technical support</button>
+          </div>
+          <div class="convivaSearchInput">
+            <input type="text" class="convivaSearch" placeholder="Start a new chat..." aria-description="Press enter to send" aria-disabled="false" id="searchInput" name="searchInput">
+          </div>
         </div>
       </div>
-      <div class="convivaWelcomeBanner">
-        <p>Hello! I am Conviva.AI(beta), an AI assistant designed to help you find the best solutions for your business needs.</p>
-        <br/>
-        <p>How can I help you today?</p>
-      </div>
-      <div class="convivaButtonInputContainer">
-        <div class="convivaButtonContainer">
-          <button type="button" class="convivaButton" onclick="alert('Hello world!')">Talk to sales</button>
-          <button type="button" class="convivaButton" onclick="alert('Hello world!')">Show me a Conviva demo</button>
-          <button type="button" class="convivaButton" onclick="alert('Hello world!')">How can Conviva help my business</button>
-          <button type="button" class="convivaButton" onclick="alert('Hello world!')">I need technical support</button>
-        </div>
-        <div class="convivaSearchInput">
-          <input type="text" placeholder="Start a new chat..." aria-description="Press enter to send" aria-disabled="false" id="searchInput" name="searchInput">
+      <div data-id="convivaAIChatBubble">
+        <div class="convivaAIChatBubble">
+          Ask Conviva AI
         </div>
       </div>
     </div>
