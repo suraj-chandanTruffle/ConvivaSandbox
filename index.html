@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class="convivaAIChatWindow">
-      <div data-id="convivaAIChatWindow">
+    <div class="hideContainer" data-id="convivaAIChatWindow">
+      <div class="convivaAIChatWindow">
         <div class="convivaAIChatHeader">
           <div>
             <span>Conviva.AI(beta)</span>
-            <button class="convivaAIChatHeaderMinimizeButton"><i class="fa fa-window-minimize"></i></button>
+            <button class="convivaAIChatHeaderMinimizeButton" onclick="doMinimizeConvivaAIChatWindow()"><i class="fa fa-window-minimize"></i></button>
           </div>
         </div>
         <div class="convivaWelcomeBanner">
@@ -34,10 +34,10 @@
           </div>
         </div>
       </div>
-      <div data-id="convivaAIChatBubble">
-        <div class="convivaAIChatBubble">
-          Ask Conviva AI
-        </div>
+    </div>
+    <div class="hideContainer" data-id="convivaAIChatBubble" onclick="doOpenConvivaAIChatWindow()">
+      <div class="convivaAIChatBubble">
+        Ask Conviva AI
       </div>
     </div>
     
