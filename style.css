@@ -68,3 +68,8 @@ body {
 .unhideContainer {
     display: block;
 }
+
+
+.embedded-messaging > .embeddedMessagingFrame {
+    visibility: hidden;
+}
