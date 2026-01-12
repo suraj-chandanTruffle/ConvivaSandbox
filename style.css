@@ -2,9 +2,8 @@ body {
     font-family: Arial, sans-serif;
     color: #FFFFFF;
 }
-.slds-avatar--circle .slds-avatar_circle {
+.slds-avatar--circle, .slds-avatar_circle {
     border-radius: 0 !important;
-   
 }
 .slds-avatar--small .slds-avatar_small{
     height:auto !important;
