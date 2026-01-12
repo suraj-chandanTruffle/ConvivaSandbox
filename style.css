@@ -2,10 +2,9 @@ body {
     font-family: Arial, sans-serif;
     color: #FFFFFF;
 }
-.slds-avatar.slds-avatar_small.slds-avatar_circle
-{
-border-radius:0 !important;
- height:auto !important   
+.slds-avatar.slds-avatar_small.slds-avatar_circle {
+    border-radius: 0 !important;
+    height: auto;
 }
 .convivaAIChatWindow {
     width: 400px;
