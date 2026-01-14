@@ -8,6 +8,10 @@ body {
 .div.embedded-messaging-chat-message-metadata[lwc-3cjfrt9r4ka] {
     margin-top:0px !important;
 }
+.embeddedServiceHelpButton *:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
 .slds-avatar--circle, .slds-avatar_circle {
     border-radius: 0 !important;
 }
