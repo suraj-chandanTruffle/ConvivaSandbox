@@ -2,6 +2,12 @@ body {
     font-family: Arial, sans-serif;
     color: #FFFFFF;
 }
+.slds-chat-message__text_inbound{
+    padding:0px !important;
+}
+.div.embedded-messaging-chat-message-metadata[lwc-3cjfrt9r4ka] {
+    margin-top:0px !important;
+}
 .slds-avatar--circle, .slds-avatar_circle {
     border-radius: 0 !important;
 }
