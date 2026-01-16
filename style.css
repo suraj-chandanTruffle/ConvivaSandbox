@@ -13,6 +13,10 @@
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
                0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
+.minimizedButtonWrapper[lwc-2tu55qmbbaf].minimizedButton[lwc-2tu55qmbbaf] {
+    bottom: 10px;
+  right: 10px;
+}
 
 .slds-avatar.slds-avatar_small.slds-avatar_circle
 {
