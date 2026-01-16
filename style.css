@@ -1,216 +1,250 @@
-body {
-    font-family: Arial, sans-serif;
-    color: #FFFFFF;
-}
-.slds-chat:focus {
-    border: none !important;
-}  
-.slds-avatar--circle, .slds-avatar_circle {
-    border-radius: 0 !important;
-}
-.slds-avatar--small .slds-avatar_small{
-    height:auto !important;
-}
 .convivaAIChatWindow {
-    width: 400px;
-    height: 500px;
-    position: absolute;
-    bottom: 0px;
-    right: 29px;
-    border-radius: 9px 9px 0px 0px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   background: #ffffff;
+   color: #ffffff;
+   font-family: Arial, sans-serif !important;
+   font-size: 16px;
+   width: 400px !important;
+   min-height: 510px !important;
+   position: fixed !important;
+   bottom: 0 !important;
+   right: 29px !important;
+   z-index: 999 !important;
+   border-radius: 9px 9px 0px 0px !important;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+               0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.slds-avatar.slds-avatar_small.slds-avatar_circle
+{
+border-radius:0 !important;
+ height:auto !important;
 }
 .convivaAIChatHeader {
-    padding: 15px 20px;
-    background-color: #6da927;
-    border-radius: 9px 9px 0px 0px;
+   padding: 15px 20px !important;
+   background-color: #6da927 !important;
+   border-radius: 9px 9px 0px 0px !important;
 }
+
+
 .convivaAIChatHeaderMinimizeButton {
-    border: 0px; 
-    background-color: #6da927;
-    float: right;
-    color: #FFFFFF;
+   border: 0px !important;
+   background-color: #6da927 !important;
+   float: right !important;
+   color: #FFFFFF !important;
 }
+
+
 .convivaWelcomeBanner {
-    background-image: url('./assets/convivaBackground.png');
-    background-repeat: no-repeat;
-    height: 135px;
-    padding: 5px 20px;
-    background-size: cover;
+   background-image: url('convivaBackground.png') !important;
+   background-repeat: no-repeat !important;
+   height: 135px !important;
+   padding: 5px 20px !important;
+   background-size: cover !important;
 }
+
+
 .convivaButton {
-   background-color: #FFFFFF;
-    border-radius: 3px;
-    border: 1px solid #9cdc00;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 5px;
-    margin: 5px 2.5px;
-    cursor: pointer;
+   background-color: #FFFFFF !important;
+  border-radius: 3px !important;
+   border: 1px solid #9cdc00 !important;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+   padding: 5px !important;
+   margin: 5px 2.5px !important;
+   cursor: pointer !important;
+   font-size: 13px !important;
+   font-family: Arial !important;
+   font-stretch: 100% !important;
+   font-weight: 400 !important;
+   color: black !important;
+   line-height: 100% !important;
 }
-.convivaButtonInputContainer{
-   padding: 20px;
-    height: 150px;
+
+
+.convivaButtonInputContainer {
+   padding: 20px !important;
+   height: 200px !important;
 }
+
+
 .convivaButtonContainer {
-    text-align: right;
+   text-align: right !important;
 }
+
 
 .convivaSearch {
-    height: 25px;
-    flex: 1;
-    padding: 5px 35px 5px 15px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    outline: none;
+   height: 35px !important;
+   flex: 1 !important;
+   padding: 5px 35px 5px 15px !important;
+   border: 1px solid #ccc !important;
+   font-size: 14px !important;
+   outline: none !important;
+   border-radius: 0 !important;
+   background-color: white !important;
+   font-family: inherit !important;
+   line-height: 100% !important;
 }
-.convivaAIChatBubble{
-    display: flex; 
-    flex-direction: column; 
-    align-items: flex-start; 
-    padding: 15px; 
-    gap: 10px; 
-    position: absolute; 
-    bottom: 10px; 
-    background: linear-gradient(96.06deg, #417D0C 13.45%, #9CDC00 128%), #9CDC00; 
-    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06); 
-    border-radius: 8px; 
-    right: 32px;
-    cursor:pointer;
+
+
+.convivaAIChatBubble {
+   display: flex !important;
+   flex-direction: column !important;
+   align-items: flex-start !important;
+   padding: 15px !important;
+   gap: 10px !important;
+   position: fixed !important;
+   bottom: 10px !important;
+   background: linear-gradient(96.06deg, #417D0C 13.45%, #9CDC00 128%), #9CDC00 !important;
+   box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+               0px 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+   border-radius: 8px !important;
+   right: 32px !important;
+   cursor: pointer !important;
 }
+
+
 .hideContainer {
-    display: none;
+   display: none !important;
 }
+
+
 .unhideContainer {
-    display: block;
+   display: block !important;
 }
 
 
-.embeddedMessagingConversationButtonWrapper .embeddedMessagingConversationButton {
-    visibility: hidden;
+.embeddedMessagingConversationButtonWrapper
+.embeddedMessagingConversationButton {
+   visibility: hidden !important;
 }
+
 
 .convivaSearchInput {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
+   display: flex !important;
+   align-items: center !important;
+   padding: 0 20px !important;
 }
-.convivaChatDisclaimer p{
-    
-    color: black;
-    font-size: 11px;
-    padding: 5px 20px;
+
+
+.convivaChatDisclaimer p {
+   color: black !important;
+   font-size: 11px !important;
+   padding: 5px 20px !important;
 }
+
+
 .convivaSearch:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+   border-color: #007bff !important;
+   box-shadow: 0 0 5px rgba(0, 123, 255, 0.3) !important;
 }
+
 
 .convivaSearchBtn {
-  position: absolute;
-  right: 25px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+   position: absolute !important;
+   right: 25px !important;
+   background: none !important;
+   border: none !important;
+   cursor: pointer !important;
+   padding: 5px !important;
+   display: flex !important;
+   align-items: center !important;
+   justify-content: center !important;
 }
-.helpMessage{
 
-    padding: 15px 0 10px 0;
 
+.helpMessage {
+   padding: 0px 0 10px 0 !important;
 }
+
+
 .convivaSearchIcon {
-  width: 20px;
-  height: 20px;
-  background-image: url('https://supehia95.github.io/convivasandboxcopy/assets/PaperPlaneTilt.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+   width: 20px !important;
+   height: 20px !important;
+   background-image: url('PaperPlaneTilt.png') !important;
+   background-size: contain !important;
+   background-repeat: no-repeat !important;
+   background-position: center !important;
 }
 
 
-
+/* Skeleton loader */
 .skeleton {
-        background: linear-gradient(
-          90deg,
-          #e8e8e8 0%,
-          #f0f0f0 50%,
-          #e8e8e8 100%
-        );
-        background-size: 1000px 100%;
-        animation: shimmer 2s infinite;
-        border-radius: 6px;
-      }
-
-      /* Avatar skeleton */
-      .skeleton-avatar {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        flex-shrink: 0;
-      }
-
-      /* Message skeleton group */
-      .skeleton-message-group {
-        display: flex;
-        gap: 12px;
-        margin-bottom: 10px;
-      }
-
-      .skeleton-message-content {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-      }
-
-      /* Lines with varying widths */
-      .skeleton-line {
-        height: 12px;
-        border-radius: 4px;
-      }
-
-      .skeleton-line.full {
-        width: 100%;
-      }
-
-      .skeleton-line.long {
-        width: 95%;
-      }
-
-      .skeleton-line.medium {
-        width: 85%;
-      }
-
-      .skeleton-line.short {
-        width: 70%;
-      }
-
-      /* Message lines for chat */
-      .skeleton-chat-line {
-        height: 14px;
-        margin-bottom: 6px;
-        border-radius: 4px;
-      }
-
-      .skeleton-chat-line:last-child {
-        margin-bottom: 0;
-      }
-
-.skeleton-search-group{
-    margin-top: 190px;
-    padding-top: 10px;
-    border-top: 1px solid #eee;
+   background: linear-gradient(
+       90deg,
+       #e8e8e8 0%,
+       #f0f0f0 50%,
+       #e8e8e8 100%
+   ) !important;
+   background-size: 1000px 100% !important;
+   animation: shimmer 2s infinite !important;
+   border-radius: 6px !important;
 }
-.hideQuickContainer{
-display:none !important;
+
+
+.skeleton-avatar {
+   width: 50px !important;
+   height: 50px !important;
+   border-radius: 50% !important;
+   flex-shrink: 0 !important;
 }
-.quickChatLoadContainer{
-    padding:20px;
+
+
+.skeleton-message-group {
+   display: flex !important;
+   gap: 12px !important;
+   margin-bottom: 10px !important;
 }
+
+
+.skeleton-message-content {
+   flex: 1 !important;
+   display: flex !important;
+   flex-direction: column !important;
+   gap: 8px !important;
+}
+
+
+.skeleton-line {
+   height: 12px !important;
+   border-radius: 4px !important;
+}
+
+
+.skeleton-line.full { width: 100% !important; }
+.skeleton-line.long { width: 95% !important; }
+.skeleton-line.medium { width: 85% !important; }
+.skeleton-line.short { width: 70% !important; }
+
+
+.skeleton-chat-line {
+   height: 14px !important;
+   margin-bottom: 6px !important;
+   border-radius: 4px !important;
+}
+
+
+.skeleton-chat-line:last-child {
+   margin-bottom: 0 !important;
+}
+
+
+.skeleton-search-group {
+   margin-top: 190px !important;
+   padding-top: 10px !important;
+   border-top: 1px solid #eee !important;
+}
+
+
+.hideQuickContainer {
+   display: none !important;
+}
+
+
+.quickChatLoadContainer {
+   padding: 20px !important;
+}
+
+
 .convivaSearchBtn:hover {
-  opacity: 0.7;
-  transition: opacity 0.2s;
+   opacity: 0.7 !important;
+   transition: opacity 0.2s !important;
 }
