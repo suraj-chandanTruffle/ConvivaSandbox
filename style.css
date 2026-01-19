@@ -39,7 +39,7 @@ border-radius:0 !important;
 
 
 .convivaWelcomeBanner {
-   background-image: url('.assets/convivaBackground.png') !important;
+   background-image: url('./assets/convivaBackground.png') !important;
    background-repeat: no-repeat !important;
    height: 135px !important;
    padding: 5px 20px !important;
